@@ -1,4 +1,15 @@
 function adicionar(valor) {
+  if (valor === "+" || valor === "-" || valor === "X" || valor === "÷") {
+    const screen = document.getElementById("resultado").innerHTML.slice(-1);
+    if (screen === "+" || screen === "-" || screen === "X" || screen === "÷") {
+      alert(
+        "Você não pode digitar dois operadores seguidos, digite um número."
+      );
+      let resultscreen = document
+        .getElementById("resultado")
+        .innerHTML.join(" ");
+    }
+  }
   let numero1 = document.getElementById("resultado").innerHTML;
   let resultado = (document.getElementById("resultado").innerHTML =
     numero1 + valor);
@@ -51,7 +62,8 @@ function op() {
         n2 = numeros.substring(numeros.indexOf(",") + 1, numeros.lenght);
         var resultadoFinal = parseFloat(n1) / parseFloat(n2);
         alert(`${expression} = ${resultadoFinal}`);
-        document.getElementById("resultado").innerHTML = resultadoFinal;
+        document.getElementById("resultado").innerHTML =
+          resultadoFinal.toFixed(2);
         break;
     }
   }
