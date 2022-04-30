@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora CriptoDev</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <div class="screen">
+          <p id="resultado"></p>
+        </div>
+        <table class="tabelabotoes">
+          <tr id="fileira">
+            <td colspan="2">
+              <button
+                class="botao"
+                onclick="deleteAll('C')"
+                style="width: 100%"
+              >
+                AC
+              </button>
+            </td>
+            <td>
+              <button class="botao" onclick="back('')">⌫</button>
+            </td>
+            <td>
+              <button class="botao" id="botao-simb" onclick="adicionar('÷')">
+                ÷
+              </button>
+            </td>
+          </tr>
+          <tr id="fileira">
+            <td>
+              <button class="botao" onclick="adicionar(1)">1</button>
+            </td>
+            <td>
+              <button class="botao" onclick="adicionar(2)">2</button>
+            </td>
+            <td>
+              <button class="botao" onclick="adicionar(3)">3</button>
+            </td>
+            <td>
+              <button class="botao" id="botao-simb" onclick="adicionar('X')">
+                X
+              </button>
+            </td>
+          </tr>
+          <tr id="fileira">
+            <td>
+              <button class="botao" onclick="adicionar(4)">4</button>
+            </td>
+            <td>
+              <button class="botao" onclick="adicionar(5)">5</button>
+            </td>
+            <td>
+              <button class="botao" onclick="adicionar(6)">6</button>
+            </td>
+            <td>
+              <button class="botao" id="botao-simb" onclick="adicionar('-')">
+                -
+              </button>
+            </td>
+          </tr>
+          <tr id="fileira">
+            <td>
+              <button class="botao" onclick="adicionar(7)">7</button>
+            </td>
+            <td>
+              <button class="botao" onclick="adicionar(8)">8</button>
+            </td>
+            <td>
+              <button class="botao" onclick="adicionar(9)">9</button>
+            </td>
+            <td ;>
+              <button class="botao" id="botao-simb" onclick="adicionar('+') ">
+                +
+              </button>
+            </td>
+          </tr>
+          <tr id="fileira">
+            <td colspan="2">
+              <button class="botao" onclick="adicionar(0)" style="width: 100%">
+                0
+              </button>
+            </td>
+            <td>
+              <button class="botao" maxlength="1" onclick="adicionar('.')">
+                .
+              </button>
+            </td>
+            <td>
+              <button class="botao" id="botao-simb" onclick="op()">=</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
