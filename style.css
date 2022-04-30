@@ -29,7 +29,7 @@
     55deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(83, 123, 186, 1) 44%,
-    rgba(44, 102, 208, 1) 67%
+    rgba(44, 102, 200, 1) 67%
   );
   border-radius: 20px;
 }
@@ -57,11 +57,13 @@ table {
   cursor: pointer;
   border-radius: 22px;
   border: none;
-  color: rgb(66, 117, 212);
+  color: black;
 }
 
 .botao:hover {
-  background-color: rgb(67, 59, 58);
+  /* background-color: rgb(67, 59, 58); */
+  background-color: #41aaef;
+  transition: 0.12s;
 }
 
 #resultado {
@@ -80,7 +82,7 @@ table {
 
 #botao-simb {
   background-color: rgb(255, 144, 0);
-  color: rgb(63, 0, 235);
+  color: black;
 }
 
 #botao-simb:hover {
