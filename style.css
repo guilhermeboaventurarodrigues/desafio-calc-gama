@@ -41,6 +41,8 @@ table {
 }
 
 .screen {
+  word-wrap: break-word;
+  overflow: hidden;
   padding: 18px;
   width: 55%;
   height: 20px;
@@ -61,7 +63,6 @@ table {
 }
 
 .botao:hover {
-  /* background-color: rgb(67, 59, 58); */
   background-color: #41aaef;
   transition: 0.12s;
 }
