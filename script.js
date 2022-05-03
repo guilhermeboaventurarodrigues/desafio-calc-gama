@@ -1,7 +1,19 @@
 function adicionar(valor) {
-  if (valor === "+" || valor === "-" || valor === "X" || valor === "÷") {
+  if (
+    valor === "+" ||
+    valor === "-" ||
+    valor === "X" ||
+    valor === "÷" ||
+    valor === "."
+  ) {
     const screen = document.getElementById("resultado").innerHTML.slice(-1);
-    if (screen === "+" || screen === "-" || screen === "X" || screen === "÷") {
+    if (
+      screen === "+" ||
+      screen === "-" ||
+      screen === "X" ||
+      screen === "÷" ||
+      screen === "."
+    ) {
       alert(
         "Você não pode digitar dois operadores seguidos, digite um número."
       );
